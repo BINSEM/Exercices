@@ -1,0 +1,40 @@
+/*En Css on selectionne les éléments selon leur balise : par exemple p sélectionnera tous les élements <p>, img tous les élements <img>*/
+body {
+	width: 600px; /*width = largeur de l'élément*/
+	margin : auto; /*margin = marge autour de l'élement, margin-top modifiera que la marge du haut, margin-ridht celle de droite etc, utiliser margin modifie toutes les marges. auto = fera des marges égales*/
+	background: url("dark_embroidery.png"); /*background défini l'arrière-plan de l'élément, url() pour donner l'adresse de l'image qu'on veut utiliser en arrière-plan*/
+	font-family: 'Lobster', cursive; /*font-family défini la police de texte qu'on veut pour l'élement selectionner, ici body donc toute la page*/
+}
+img {
+	float: left;
+	width : 200px;
+}
+
+#menu_bin li { /*Sur la page html on a mis un id="menu_bin" dans la balise <ul> pour différencier cet ul du reste, pour utiliser un id en css on met #nom_de_l_id, ici #menu_ben. On ajoute li après pour sélectionner les qu'il contient*/
+	display : inline; /*Par défaut les éléments s'affichent soit sur une ligne (comme les liens. Ils sont type inline) ou les uns en dessous des autres (comme les paragraphes, ou les éléments de liste. Ils sont de type block). Ici on demande à ce que la liste soit affichée en ligne*/
+	margin-right: 10px;
+}
+#para {
+	font-size: 130%;
+}
+
+footer p {
+	float : left;
+	font-family: Arial;
+}
+footer a {
+	float : right;
+	margin-top: 15px;
+	font-family: Arial;
+}
+
+p:first-letter{ /*:first-letter est une pseudo-classe qui permet de ne sélectionner que la première lettre des éléments (ici les paragraphes)*/
+	color : #2177A6; /*couleur hexadécimale*/
+	font-size : 150%;
+}
+header h2 {
+        color: white
+}
+section li {
+        color: red
+}
